@@ -20,8 +20,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/zsh/plugin
 #'zsh-syntax-highlighting'
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 cd zsh-syntax-highlighting
-mv /usr/local/share/zsh-syntax-highlighting /usr/share/zsh/plugins/zsh-syntax-highlighting
 make install
+mv /usr/local/share/zsh-syntax-highlighting /usr/share/zsh/plugins/zsh-syntax-highlighting
 cd ..
 
 
