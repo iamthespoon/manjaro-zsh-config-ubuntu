@@ -2,16 +2,19 @@
 
 pkgdir="/"
 
+	install -D -m644 .zshrc ${pkgdir}/etc/skel/.zshrc
+	install -D -m644 rootzshrc ${pkgdir}/root/.zshrc
 
 git clone https://github.com/Chrysostomus/manjaro-zsh-config.git
 cd manjaro-zsh-config
-	install -D -m644 .zshrc ${pkgdir}/etc/skel/.zshrc
-	install -D -m644 rootzshrc ${pkgdir}/root/.zshrc
+
 	
 	mkdir -p $pkgdir/usr/share/zsh/scripts
 	
 	cp -r base16-shell $pkgdir/usr/share/zsh/scripts
 	chmod a+x $pkgdir/usr/share/zsh/scripts/base16-shell/*
+cd ..
+
 
 #'zsh-autosuggestions'
 git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/zsh/plugins/zsh-autosuggestions
